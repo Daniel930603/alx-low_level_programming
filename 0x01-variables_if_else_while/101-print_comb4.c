@@ -32,7 +32,8 @@ while (e <= 9)
 			if (c != d && d != e && e < d && d < c)
 			{
 				putchar('0' + e);
-				putchar('0' + d);								putchar('0' + c);
+				putchar('0' + d);
+				putchar('0' + c);
 				if (c + d + e != 9 + 8 + 7)
 				{
 					putchar(',');
