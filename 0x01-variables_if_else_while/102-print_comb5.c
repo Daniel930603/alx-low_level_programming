@@ -37,7 +37,7 @@ while (c <= 98)
 		}
 		c2++;
 	}
-	c++
+	c++;
 }
 putchar('\n');
 return (0);
