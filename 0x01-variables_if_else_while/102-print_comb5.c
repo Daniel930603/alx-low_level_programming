@@ -28,7 +28,8 @@ while (c <= 98)
 			putchar(f_d);
 			putchar(l_d);
 			putchar(' ');
-			putchar(f_d2);									putchar(l_d2);
+			putchar(f_d2);
+			putchar(l_d2);
 			if (c != 98)
 			{
 				putchar(',');
