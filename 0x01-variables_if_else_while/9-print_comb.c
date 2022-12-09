@@ -20,4 +20,5 @@ if (c !=9 )
 c++;
 }
 putchar('\n');
+return (0);
 }
