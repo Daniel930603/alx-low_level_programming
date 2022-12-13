@@ -2,11 +2,14 @@
 /**
  * print_sign - check numers
  * @n : number to check
- * return:0 or 1
+ * return:Returns 1 and prints + if n is greater than zero
+ * Returns 0 and prints 0 if n is zero
+ * Returns -1 and prints - if n is less than zero
  */
 int print_sign(int n)
 {
 	int test;
+
 	if (n > 0)
 	{
 		test = 1;
