@@ -8,7 +8,7 @@
 int main(void)
 {
 unsigned long int i, bef = 1, aft = 2, l = 1000000000, bef1, bef2;
-unsigned long int aft1, aft2;	
+unsigned long int aft1, aft2;
 
 	printf("%lu", bef);
 
