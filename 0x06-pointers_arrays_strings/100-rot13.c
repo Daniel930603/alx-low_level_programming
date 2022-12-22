@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * *rot13 - encodes a string using rot13.
  * @s: int type array pointer
@@ -6,20 +7,21 @@
  */
 char *rot13(char *s)
 {
-	int i, ii;
-	char input[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i = 0, i2 = 0;
+	char alpha[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alpha2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*(s + i) != 0)
 	{
-		for (ii = 0; ii < 54; ii++)
-		{	
-			if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A')) && s[i] == input[ii])
+		for (i2 = 0; i2 <= 52; i2++)
+		{
+			if (*(s + i) == alpha[i2])
 			{
-				s[i] = output[ii];
+				*(s + i) = alpha2[i2];
 				break;
 			}
 		}
+		i++;
 	}
 	return (s);
 }
