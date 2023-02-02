@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,9 +7,8 @@
  */
 int get_endianness(void)
 {
-	unsigned int x = 1;
-	char *c = (char *) &x;
-if (*c == 1)
-	return 1;
-return 0;
+	int i = 1;
+	char *c = (char *)&i;
+
+	return ((*c) ? 1 : 0);
 }
