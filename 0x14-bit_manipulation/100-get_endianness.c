@@ -9,5 +9,8 @@ int get_endianness(void)
 	short int word = 0x0001;
         char *b = (char *)&word;
 	
-        return (b[0] ? 1 : 0);
+	int i;
+    for (i = 0; i < word; i++)
+         return(" %.2x", b[i]);
+    printf("\n");
 }
